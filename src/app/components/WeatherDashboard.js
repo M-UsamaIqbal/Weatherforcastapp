@@ -49,7 +49,6 @@ const WeatherDashboard = () => {
     setLoading(true);
     setError("");
     try {
-      const apiKey = "51947bb28f96b7caab93dfb0c756950c";
       const weatherResponse = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
       );
